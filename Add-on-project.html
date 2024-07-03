@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is chess?</title>
+    <style>
+        body {
+            background-color: #D99BDD; /* Light purple */
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-toggle-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .theme-toggle {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .dark-theme {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-theme .container {
+            background-color: #444;
+            color: white;
+        }
+
+        .dark-theme .theme-toggle {
+            background-color: #D99BDD;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="theme-toggle-container">
+    <button class="theme-toggle" onclick="toggleTheme()">Dark theme</button>
+</div>
+<div class="container">
+
+    <h1>Chess</h1>
+    <h2>My favorite hobby</h2>
+    <a href="wikipendia" target="_blank">
+        <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/842/original/chess_5.jpg?1718986229"
+                alt=""
+        />
+    </a>
+    <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/847/original/chess_4_%281%29_%281%29.jpg?1718986952"
+            alt=""
+    />
+    <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/846/original/images.jpeg?1718986798"
+            alt=""
+    />
+    <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/845/original/ChessSet.jpg?1718986719"
+            alt=""
+    />
+    <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/844/original/chess_3.jpg?1718986327"
+            alt=""
+    />
+    <p>
+        Chess is an abstract strategy game that involves no hidden information and no elements of chance.
+        It is played on a chessboard with 64 squares arranged in an 8×8 grid. The players, referred to as "White" and "Black".
+        Each control sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns.
+        White moves first, followed by Black. The game is won by checkmating the opponent's king, i.e. threatening it with inescapable capture.
+        There are several ways a game can end in a draw.
+    </p>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">Read on Wikipedia</a>
+    </p>
+</div>
+<footer>
+    <p>Coded with 💜 by <a href="https://www.shecodes.io/">Limpho Semakale</a></p>
+</footer>
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle('dark-theme');
+    }
+
+</script>
+</body>
+</html>
